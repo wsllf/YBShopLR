@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.android.leleyouba.ybshop.common.shopdetail.fragment.ShopFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/shop_top_imgs"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+            <include layout="@layout/shop_simple_info"/>
+
+            <include layout="@layout/shop_select"/>
+
+            <include layout="@layout/shop_send_address"/>
+
+            <include layout="@layout/shop_freight"/>
+
+            <include layout="@layout/store_after_sale_seven"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+        <LinearLayout
+            android:id="@+id/linear_evalutation_more"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_shop_evalutation_count"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:text="评价(22654)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="14sp"
+                android:text="好评"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_shop_well_evalutation_percent"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="98%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/img_shop_more_evalutation"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/forward_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_shop_three_short_evalutation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/linear_img_evalutation"
+                android:background="@drawable/button_gray_border"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:text="晒图相册"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_img_evalutation_count"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="(195)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <include layout="@layout/shop_store_layout"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

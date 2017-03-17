@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:divider="@drawable/linearlayout_divider"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_marginRight="12dp"
+            android:id="@+id/iv_evalutation_user_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/user_img"/>
+
+        <TextView
+            android:id="@+id/tv_evalutation_user_nickname"
+            android:textSize="12sp"
+            android:layout_marginRight="8dp"
+            android:text="j***s"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/iv_evalutation_user_level"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/user_level_red"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_evalutation_date"
+            android:textSize="12sp"
+            android:text="2016-07-21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:background="#68888888"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/rate_evalutation"
+            android:stepSize="1"
+            android:rating="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_evalutation_content"
+        android:textSize="12sp"
+        android:text="评论"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_evalutation_img"
+        android:scrollIndicators="none"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:text="005鼠标-黑色"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/tv_evalutation_classfy"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+
+        <TextView
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买日期:"/>
+        <TextView
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/tv_evalutation_buy_date"
+            android:textSize="12sp"
+            android:text="2016-11-08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/img_evalutation_encourage"
+            android:src="@drawable/attention"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:id="@+id/tv_evalutation_encourage_count"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp"
+            android:text="0"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+
+            android:src="@mipmap/evalutation"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:id="@+id/tv_evalutation_reply_count"
+            android:layout_marginRight="8dp"
+            android:textSize="12sp"
+            android:text="0"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

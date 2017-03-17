@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/linear_shop_simple_info"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_shop_simple_info"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="14sp"
+        android:id="@+id/tv_red_shop_simmple_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="¥"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_price_shop_simple_info"
+            android:layout_marginLeft="12dp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="39.00"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_lose_price_shop_simple_info"
+            android:background="@drawable/button_gray_border"
+            android:textColor="@android:color/darker_gray"
+            android:text="降价通知"
+            android:textSize="12sp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>

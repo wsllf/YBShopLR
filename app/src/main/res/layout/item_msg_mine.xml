@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_msg_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/y_" />
+
+    <TextView
+        android:id="@+id/tv_msg_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_msg_item"
+        android:textSize="18sp"
+        android:textColor="#FF3B3A3A"
+        android:layout_marginLeft="10dp"
+        android:text="有吧客服"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/tv_msg_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_msg_item"
+        android:textSize="18sp"
+        android:textColor="#FFA6A5A5"
+        android:layout_marginLeft="10dp"
+        android:text="点击查看您与客服的沟通记录"
+        android:layout_marginTop="36dp"/>
+    <TextView
+        android:id="@+id/tv_msg_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2月23号"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

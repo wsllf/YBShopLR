@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.android.leleyouba.ybshop.common.shopdetail.fragment.DetailFragment">
+
+
+
+<TabHost
+    android:id="@+id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TabWidget
+            android:showDividers="middle"
+            android:divider="@drawable/linearlayout_divider"
+            android:dividerPadding="10dp"
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/detail_shop_introduce"
+                style="@style/tab_main_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_shop_standard_arguments"
+                style="@style/tab_main_content">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detail_shop_pack_after_sale"
+                style="@style/tab_main_content">
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
+
+</FrameLayout>

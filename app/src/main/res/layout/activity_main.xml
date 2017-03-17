@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:orientation="vertical"
+    tools:context="com.android.leleyouba.ybshop.MainActivity">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_main_homepage"
+                    style="@style/tab_main_content">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_main_classify"
+                    style="@style/tab_main_content">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_main_find"
+                    style="@style/tab_main_content">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_main_shoppingtrolley"
+                    style="@style/tab_main_content">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_main_mine"
+                    style="@style/tab_main_content">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <TabWidget
+
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:divider="@null">
+
+            </TabWidget>
+        </LinearLayout>
+
+    </TabHost>
+</LinearLayout>

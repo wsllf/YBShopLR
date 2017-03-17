@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/real_shop_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <CheckBox
+            android:id="@+id/shop_trolley_wares_checkbox"
+            android:layout_width="30dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_shop_trolley_wares"
+            android:layout_toRightOf="@id/shop_trolley_wares_checkbox"
+            android:layout_margin="10dp"
+            android:src="@mipmap/apple"
+            android:scaleType="centerCrop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:id="@+id/tv_shop_trolley_wares_info"
+            android:layout_toRightOf="@id/iv_shop_trolley_wares"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="商品简介"/>
+        <TextView
+            android:id="@+id/tv_shop_trolley_wares_price"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_toRightOf="@id/iv_shop_trolley_wares"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品价格"/>
+        <com.android.leleyouba.ybshop.shoppingtrolley.customview.ShopCountView
+            android:id="@+id/btn_shop_num"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="10dp"
+            android:text="商品数量"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

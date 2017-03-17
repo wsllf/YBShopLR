@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_detail_classify_item"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:orientation="vertical"
+    android:padding="3dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_detail_classify_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_detail_classi_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="2dp"
+        android:text="[有吧超市] 比利时原瓶进口精酿啤酒Hoegaarden"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_detail_classify_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥ 99.00"
+            android:textColor="#FFF45353"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_classify_fullCut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#FFF45353"
+            android:padding="2dp"
+            android:text="满减"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_classify_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#FFF45353"
+            android:padding="2dp"
+            android:text="劵"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_classi_adv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="3dp"
+            android:text="广告"
+            android:textColor="#FF75DCF5"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_detail_classi_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="14852条 评价 98%好评"
+        android:textSize="13dp" />
+
+</LinearLayout>

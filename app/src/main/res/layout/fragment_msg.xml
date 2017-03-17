@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.leleyouba.ybshop.mine.fragment.MsgFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_msg_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider = "#FFABA9A9"
+        android:dividerHeight = "10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>
